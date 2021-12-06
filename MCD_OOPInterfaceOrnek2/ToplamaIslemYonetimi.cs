@@ -8,12 +8,12 @@ namespace MCD_OOPInterfaceOrnek2
 {
     public class ToplamaIslemYonetimi : Islem, Iislem
     {
-        void Iislem.IslemAdiniGetir()
+        public void IslemAdiniGetir()
         {
             Console.WriteLine(IslemTur+"-->");
         }
 
-        void Iislem.IslemYap()
+        public void IslemYap()
         {
             KullanicidanSayiAlveTopla();
         }
@@ -23,10 +23,10 @@ namespace MCD_OOPInterfaceOrnek2
             Console.WriteLine("Sayı 1: ");
             int s1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Sayı 1: ");
+            Console.WriteLine("Sayı 2: ");
             int s2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Sayı 1: ");
+            Console.WriteLine("Sayı 3: ");
             int s3 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Sonuç: "+(s1 +s2+s3));
 
